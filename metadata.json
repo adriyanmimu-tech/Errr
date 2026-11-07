@@ -1,0 +1,6 @@
+{
+  "name": "CinePulse — High-Definition Cinema & Series Hub",
+  "description": "High-definition cinema streaming, official MovieBox lip-synced subtitles, series tracker, and live episode alerts on CinePulse.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

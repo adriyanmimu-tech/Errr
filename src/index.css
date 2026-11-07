@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+video, #player-container-0 {
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+
+video::cue {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  color: transparent !important;
+  text-shadow: none !important;
+  background: none !important;
+  font-size: 0 !important;
+  display: none !important;
+}
+
+video::-webkit-media-text-track-display,
+video::-webkit-media-text-track-container,
+video::-webkit-media-text-track-region {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  color: transparent !important;
+  text-shadow: none !important;
+  background: none !important;
+  font-size: 0 !important;
+  display: none !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pb-safe {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+.pt-safe {
+  padding-top: max(0px, env(safe-area-inset-top));
+}
